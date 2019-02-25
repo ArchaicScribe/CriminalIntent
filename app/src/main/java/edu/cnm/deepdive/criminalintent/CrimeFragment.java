@@ -48,18 +48,19 @@ public class CrimeFragment extends Fragment {
     @Override
     public void afterTextChanged(Editable s) {
       //This one too.
+    }
+  });
 
-      
+    DateButton = (Button) v.findViewById(R.id.crime_date);
+      DateButton.setText(Crime.getDate().toString());
+      DateButton.setEnabled(false);
     SolvedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
     SolvedCheckBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         Crime.setSolved(isChecked);
-      }
-    });
-      DateButton = (Button) v.findViewById(R.id.crime_date);
-      DateButton.setText(Crime.getDate().toString());
-      DateButton.setEnabled(false);
+
+
     }
   });
 
