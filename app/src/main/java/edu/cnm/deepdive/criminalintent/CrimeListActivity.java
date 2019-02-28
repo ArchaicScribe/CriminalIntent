@@ -17,7 +17,7 @@ import java.util.List;
 A controller class.
  */
 
-public class CrimeListFragment extends Fragment {
+public class CrimeListActivity extends Fragment {
 
   private RecyclerView crimeRecyclerView;
   private CrimeAdapter adapter;

@@ -16,12 +16,13 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class CrimeFragment extends Fragment {
+public class CrimeListFragment extends Fragment {
 
   private Crime crime;
   private EditText titleField;
   private Button dateButton;
   private CheckBox solvedCheckBox;
+
 //  TextView.setText(R.string.some_string);
 
   @Override
@@ -30,13 +31,7 @@ public class CrimeFragment extends Fragment {
     crime = new Crime();
   }
 
-  /*
-  This method inflates the layout for the fragment's view and returns the
-  inflated View to the hosting activity, i.e. CrimeActivity.java. The
-  LayoutInflater and ViewGroup parameters are necessary to inflate the layout.
-  This method is also the place to wire up the widgets: EditText, Checkbox, and
-  Button.
-   */
+
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

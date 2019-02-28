@@ -17,10 +17,6 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
     setContentView(R.layout.activity_fragment); // set the activity view to
     // be inflated.
 
-     /*
-      The following code says, "Create a new fragment transaction, include one
-      add operation it, and then commit it.
-       */
     FragmentManager fm = getSupportFragmentManager();
     Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
