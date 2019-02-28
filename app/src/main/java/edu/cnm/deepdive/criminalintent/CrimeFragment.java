@@ -37,7 +37,7 @@ public class CrimeFragment extends Fragment {
   TitleField.addTextChangedListener(new TextWatcher() {
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-      //This space is intentionally left blank.
+
     }
 
     @Override
@@ -47,7 +47,7 @@ public class CrimeFragment extends Fragment {
 
     @Override
     public void afterTextChanged(Editable s) {
-      //This one too.
+
     }
   });
 
