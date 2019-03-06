@@ -14,9 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
 
-/*
-A controller class.
- */
+
+
 
 public class CrimeListFragment extends Fragment {
 
