@@ -4,11 +4,12 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/linearLayout"
   android:layout_width="match_parent"
-  android:layout_height="wrap_content">
+  android:layout_height="wrap_content"
+  tools:layout_editor_absoluteY="81dp">
 
   <TextView
     android:id="@+id/crime_title"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
     android:layout_marginLeft="16dp"
@@ -16,9 +17,8 @@
     android:text="Crime Title"
     android:textColor="@android:color/black"
     android:textSize="18sp"
-    app:layout_constraintBottom_toTopOf="parent"
-    app:layout_constraintEnd_toStartOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/crime_solved"
     app:layout_constraintTop_toTopOf="parent"/>
 
   <TextView
